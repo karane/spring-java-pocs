@@ -1,6 +1,6 @@
 # Spring Processors POC
 
-This project demonstrates various processors and event listeners in Spring Core.
+This project demonstrates processors and event listeners in Spring Core.
 
 ## Included Listeners
 - `ContextRefreshedEvent Listener`: Triggered when the application context is refreshed.
