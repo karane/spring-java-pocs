@@ -1,4 +1,4 @@
-# Spring Boot REST API Example
+# Spring Boot REST POC
 
 ## Overview
 This project demonstrates a simple REST API built using Spring Boot with all HTTP verbs.
@@ -10,8 +10,8 @@ This project demonstrates a simple REST API built using Spring Boot with all HTT
 ## How to Run
 1. Clone the repository:
    ```sh
-   git clone https://github.com/example/springboot-rest-api.git
-   cd springboot-rest-api
+   git clone https://github.com/karane/spring-java-pocs.git
+   cd spring-rest-poc
    ```
 2. Build the project:
    ```sh
