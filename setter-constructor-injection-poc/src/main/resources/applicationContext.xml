@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Setter Injection -->
+    <bean id="greeting" class="org.karane.Greeting">
+        <property name="message" value="Hello from Setter Injection!"/>
+    </bean>
+
+    <!-- Constructor Injection -->
+    <bean id="greetingConstructor" class="org.karane.GreetingConstructor">
+        <constructor-arg value="Hello from Constructor Injection!"/>
+    </bean>
+</beans>
