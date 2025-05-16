@@ -16,5 +16,19 @@ public class Order {
     public Order() {}
     public Order(String product) { this.product = product; }
 
-    // Getters/Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getProduct() {
+        return product;
+    }
+
+    public void setProduct(String product) {
+        this.product = product;
+    }
 }

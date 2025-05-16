@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class UserService {
@@ -17,7 +18,7 @@ public class UserService {
         this.publisher = publisher;
     }
 
-    @org.springframework.transaction.annotation.Transactional(
+    @Transactional(
         rollbackFor = {Exception.class},
         propagation = Propagation.REQUIRED,
         isolation = Isolation.REPEATABLE_READ
@@ -29,7 +30,7 @@ public class UserService {
         throw new Exception("Checked exception – triggers rollback due to rollbackFor");
     }
 
-    @org.springframework.transaction.annotation.Transactional(readOnly = true)
+    @Transactional(readOnly = true)
     public long countUsers() {
         return userRepository.count();
     }
